@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ысык-Кол стоматология</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <a href="tel:+996500993976"><i class="fa fa-phone"></i> +996 (500) 993-976</a>
+                <a href="mailto:info@example.com"><i class="fa fa-envelope"></i> info@example.com</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-vk"></i></a>
+            </div>
+            <nav>
+                <div class="burger" id="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <ul class="head" id="menu">
+                    <li><a href="#services" class="nav-item">Наши услуги</a></li>
+                    <li><a href="#gallery" class="nav-item">Галерея</a></li>
+                    <li><a href="#reviews" class="nav-item">Отзывы</a></li>
+                    <li><a href="#contact" class="nav-item">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo-container">
+            <img class="logotip" src="./Ысык-Кол стоматология логотип с ИК в центре.png" alt="Логотип">
+            <h1 class="name">Ыссык-Көл</h1>
+            <h4 class="name">стоматологическая клиника</h4>
+        </div>
+        
+    </header>
+    <div class="containerr">
+        <section id="home" class="home">
+            <h2 class="welcome">Добро пожаловать в нашу клинику!</h2>
+            <p class="welcome">Мы предлагаем широкий спектр стоматологических услуг для всей семьи.</p>
+        </section>
+        <section class="services">
+            <h2>Наши услуги</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Терапевтическая стоматология</h3>
+                    <p>Лечение кариеса, пульпита и других заболеваний зубов и десен.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Ортопедическая стоматология</h3>
+                    <p>Протезирование зубов, установка коронок и мостов.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Ортодонтия</h3>
+                    <p>Исправление прикуса и выравнивание зубов с помощью брекетов и кап.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Хирургическая стоматология</h3>
+                    <p>Удаление зубов, имплантация и другие хирургические процедуры.</p>
+                </div>
+            </div>
+        </section>
+        <section id="specialists" class="specialists">
+            <h2>Наши специалисты</h2>
+            <div class="specialist-list">
+                <div class="specialist-item">
+                    <img src="/Доктор Иванов.jpg" alt="Специалист 1">
+                    <h3>Доктор Иванов</h3>
+                    <p>Терапевт</p>
+                </div>
+                <div class="specialist-item">
+                    <img src="/Доктор Петров.jpg" alt="Специалист 2">
+                    <h3>Доктор Петров</h3>
+                    <p>Ортопед</p>
+                </div>
+                <div class="specialist-item">
+                    <img src="/Доктор Сидоров.jpg" alt="Специалист 3">
+                    <h3>Доктор Сидоров</h3>
+                    <p>Ортодонт</p>
+                </div>
+                <div class="specialist-item">
+                    <img src="/Доктор Смирнов.png" alt="Специалист 4">
+                    <h3>Доктор Смирнов</h3>
+                    <p>Хирург</p>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery-item">
+                <img class="teeth" src="/i (1).webp" alt="">
+            </div>
+        </section>
+        <section class="reviews">
+            <h2>Отзывы пациентов</h2>
+            <div id="reviews"></div>
+        </section>
+        <footer>
+            <h1>Форма онлайн записи</h1>
+            <form id="appointment-form" class="appointment-form">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Время:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Записаться">
+                </div>
+            </form>
+            <div id="success-message" class="hidden">
+                <p>Спасибо за вашу запись!</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
